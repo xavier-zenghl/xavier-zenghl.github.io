@@ -21,21 +21,16 @@ redirect_from:
  <a href='https://scholar.google.com/citations?user=CPfyv1gAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=引用"></a>。
 
 我的研究领域包括：
-- 仪器仪表
-- 机械工程
-- 电磁无损检测
-- 漏磁检测
-- 涡流检测
-- 磁传感器
-- 无损检测装备开发
+- 具身智能
+- 计算机视觉
   
 
 
 <span class='anchor' id='-xl'></span>
 
 # 🎓 学历
-- *2020.09 - 2025.06*, <a href="https://www.scut.edu.cn/"><img class="svg" src="/images/SCUT_logo.png" width="23pt"></a> 华南理工大学 计算机科学与工程学院, 硕博连读
-- *2014.09 - 2018.06*, <a href="https://www.scut.edu.cn/"><img class="svg" src="/images/SCUT_logo.png" width="20pt"></a> 华南理工大学 机械与汽车工程学院, 本科
+- *2020.09 - 2025.06*, <a href="https://www.scut.edu.cn/"><img class="svg" src="/images/SCUT_logo.png" width="25pt"></a> 华南理工大学 计算机科学与工程学院, 硕博连读
+- *2014.09 - 2018.06*, <a href="https://www.scut.edu.cn/"><img class="svg" src="/images/SCUT_logo.png" width="25pt"></a> 华南理工大学 机械与汽车工程学院, 本科
  
 <span class='anchor' id='-lwzl'></span>
 
