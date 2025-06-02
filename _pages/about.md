@@ -59,7 +59,7 @@ redirect_from:
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2025</div><img src='images/MARS.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2025</div><img src='images/GMAP.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 -	`Hongliang Zeng`, Ping Zhang, Chengjiong Wu, Jiahua Wang, Tingyu Ye and Fang Li. GMAP:Generalized Manipulation of Articulated Objects in Robotic Using Pre-trained Model. *The AAAI Conference on Artificial Intelligence (AAAI-25)*, 2025, 39(14), 14736-14744. (CCF A; Oral)  
