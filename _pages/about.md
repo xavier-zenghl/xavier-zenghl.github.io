@@ -54,6 +54,15 @@ redirect_from:
 </div>
 </div>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IJCAI 2024</div><img src='images/MARS.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+-	`Hongliang Zeng`, Ping Zhang, Chengjiong Wu, Jiahua Wang, Tingyu Ye and Fang Li. MARS:Multimodal Active Robotic Sensing for Articulated Characterization. *The Thirty-Third International Joint Conference on Artificial Intelligence (IJCAI-24)*, 2024. (CCF A; Oral)  
+[[pdf]](https://arxiv.org/abs/2407.01191)[[code]](https://github.com/xavier-zenghl/MARS)
+
+</div>
+</div>
+
 ### 专利
 ---
 - 康宜华, `唐健`. 一种基于铁磁性板的缺陷检测方法. [[网页]](https://cprs.patentstar.com.cn/Search/Detail?ANE=9IBC8DFA9GCB8DEA6FAA9HHFCICA1BAA9ACB9EGC9GAA6AAA)
