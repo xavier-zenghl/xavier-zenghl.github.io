@@ -37,7 +37,7 @@ redirect_from:
 # 📝 论文
 
 ---
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Sensors 2022</div><img src='images/sensors2022.svg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Sensors 2022</div><img src='images/AHEGC.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 Zeng H, Zhang P, Li F, et al. AHEGC: Adaptive Hindsight Experience Replay With Goal-Amended Curiosity Module for Robot Control[J]. IEEE Transactions on Neural Networks and Learning Systems, 2023.
