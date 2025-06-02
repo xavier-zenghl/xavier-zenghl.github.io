@@ -63,7 +63,16 @@ redirect_from:
 <div class='paper-box-text' markdown="1">
 
 -	`Hongliang Zeng`, Ping Zhang, Chengjiong Wu, Jiahua Wang, Tingyu Ye and Fang Li. GMAP:Generalized Manipulation of Articulated Objects in Robotic Using Pre-trained Model. *The AAAI Conference on Artificial Intelligence (AAAI-25)*, 2025, 39(14), 14736-14744. (CCF A; Oral)  
-[[pdf]](https://ojs.aaai.org/index.php/AAAI/article/view/33615/35770)[[code]](https://github.com/xavier-zenghl/MARS)
+[[pdf]](https://ojs.aaai.org/index.php/AAAI/article/view/33615/35770)
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICME 2025</div><img src='images/Point-MGE.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+-	`Hongliang Zeng`, Ping Zhang, Fang Li, Jiahua Wang, Tingyu Ye and Zichen Wei. Masked Generative Extractor for Synergistic Representation and 3D Generation of Point Clouds *IEEE International Conference on Multimedia & Expo 2025 (ICME-25)*, 2025. (CCF B; Oral)  
+
 
 </div>
 </div>
