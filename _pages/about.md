@@ -33,6 +33,11 @@ redirect_from:
  
 <span class='anchor' id='-lwzl'></span>
 
+# 🎓 工作
+- *2020.09 - 2025.06*, <a href="https://www.scut.edu.cn/"><img class="svg" src="/images/SCUT_logo.png" width="25pt"></a> 华南理工大学 计算机科学与工程学院, 硕博连读
+- *2014.09 - 2018.06*, <a href="https://www.scut.edu.cn/"><img class="svg" src="/images/SCUT_logo.png" width="25pt"></a> 华南理工大学 机械与汽车工程学院, 本科
+ 
+<span class='anchor' id='-lwzl'></span>
 # 📝 论文
 
 ---
