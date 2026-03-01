@@ -241,3 +241,198 @@ section {
   background: var(--color-accent);
   color: #FFFFFF;
 }
+
+/* === About === */
+.about-content {
+  max-width: 640px;
+}
+
+.about-content p {
+  font-size: 1.0625rem;
+  line-height: 1.8;
+}
+
+/* === Projects === */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.project-card {
+  padding: 24px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  transition: box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.project-card h3 {
+  margin-bottom: 8px;
+}
+
+.project-card p {
+  font-size: 0.9375rem;
+  margin-bottom: 16px;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.tag {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  padding: 2px 10px;
+  background: var(--color-card-bg);
+  border-radius: 4px;
+  color: var(--color-text-secondary);
+}
+
+.project-links {
+  display: flex;
+  gap: 16px;
+}
+
+.project-links a {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+/* === Publications === */
+.pub-list {
+  list-style: none;
+}
+
+.pub-item {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.pub-item:first-child {
+  padding-top: 0;
+}
+
+.pub-item:last-child {
+  border-bottom: none;
+}
+
+.pub-title {
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 4px;
+}
+
+.pub-authors {
+  font-size: 0.9375rem;
+  margin-bottom: 2px;
+}
+
+.pub-authors strong {
+  color: var(--color-accent);
+}
+
+.pub-venue {
+  font-size: 0.875rem;
+  font-style: italic;
+  margin-bottom: 8px;
+}
+
+.pub-links {
+  display: flex;
+  gap: 16px;
+}
+
+.pub-links a {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  padding: 2px 8px;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  color: var(--color-text-secondary);
+  transition: all 0.2s ease;
+}
+
+.pub-links a:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+/* === Timeline === */
+.timeline {
+  position: relative;
+  padding-left: 140px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 120px;
+  top: 8px;
+  bottom: 8px;
+  width: 1px;
+  background: var(--color-border);
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -24px;
+  top: 8px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-accent);
+}
+
+.timeline-date {
+  position: absolute;
+  left: -140px;
+  top: 0;
+  width: 100px;
+  font-size: 0.8125rem;
+  color: var(--color-text-secondary);
+  text-align: right;
+}
+
+.timeline-content h3 {
+  margin-bottom: 2px;
+}
+
+.timeline-org {
+  font-weight: 500;
+  color: var(--color-text);
+  margin-bottom: 4px;
+}
+
+.timeline-content > p:last-child {
+  font-size: 0.9375rem;
+}
+
+/* === Footer === */
+.footer {
+  padding: 48px 24px;
+  text-align: center;
+  border-top: 1px solid var(--color-border);
+}
+
+.footer p {
+  font-size: 0.8125rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 4px;
+}
