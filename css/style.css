@@ -407,13 +407,13 @@ section {
 /* === Timeline === */
 .timeline {
   position: relative;
-  padding-left: 200px;
+  padding-left: 20px;
 }
 
 .timeline::before {
   content: '';
   position: absolute;
-  left: 180px;
+  left: 0;
   top: 8px;
   bottom: 8px;
   width: 1px;
@@ -441,14 +441,9 @@ section {
 }
 
 .timeline-date {
-  position: absolute;
-  left: -200px;
-  top: 0;
-  width: 160px;
   font-size: 0.8125rem;
   color: var(--color-text-secondary);
-  text-align: right;
-  white-space: nowrap;
+  margin-bottom: 4px;
 }
 
 .timeline-content h3 {
@@ -568,22 +563,7 @@ section {
   }
 
   .timeline {
-    padding-left: 0;
-  }
-
-  .timeline::before {
-    left: 0;
-  }
-
-  .timeline-item::before {
-    left: -4px;
-  }
-
-  .timeline-date {
-    position: static;
-    width: auto;
-    text-align: left;
-    margin-bottom: 4px;
+    padding-left: 16px;
   }
 
   .timeline-logo {
