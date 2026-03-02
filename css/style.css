@@ -444,10 +444,11 @@ section {
   position: absolute;
   left: -140px;
   top: 0;
-  width: 100px;
+  width: 120px;
   font-size: 0.8125rem;
   color: var(--color-text-secondary);
   text-align: right;
+  white-space: nowrap;
 }
 
 .timeline-content h3 {
