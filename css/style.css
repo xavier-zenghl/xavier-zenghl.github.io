@@ -407,13 +407,13 @@ section {
 /* === Timeline === */
 .timeline {
   position: relative;
-  padding-left: 140px;
+  padding-left: 200px;
 }
 
 .timeline::before {
   content: '';
   position: absolute;
-  left: 120px;
+  left: 180px;
   top: 8px;
   bottom: 8px;
   width: 1px;
@@ -442,9 +442,9 @@ section {
 
 .timeline-date {
   position: absolute;
-  left: -140px;
+  left: -200px;
   top: 0;
-  width: 120px;
+  width: 160px;
   font-size: 0.8125rem;
   color: var(--color-text-secondary);
   text-align: right;
