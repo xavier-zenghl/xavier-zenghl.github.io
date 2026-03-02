@@ -454,6 +454,20 @@ section {
   margin-bottom: 2px;
 }
 
+.timeline-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.timeline-logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
 .timeline-org {
   font-weight: 500;
   color: var(--color-text);
