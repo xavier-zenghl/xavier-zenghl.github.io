@@ -407,12 +407,13 @@ section {
 /* === Timeline === */
 .timeline {
   position: relative;
+  padding-left: 24px;
 }
 
 .timeline::before {
   content: '';
   position: absolute;
-  left: -16px;
+  left: 4px;
   top: 8px;
   bottom: 8px;
   width: 1px;
@@ -431,7 +432,7 @@ section {
 .timeline-item::before {
   content: '';
   position: absolute;
-  left: -20px;
+  left: -24px;
   top: 8px;
   width: 8px;
   height: 8px;
