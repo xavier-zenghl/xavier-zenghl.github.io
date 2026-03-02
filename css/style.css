@@ -585,14 +585,12 @@ section {
     margin-bottom: 4px;
   }
 
-  .timeline-header {
-    flex-direction: column;
-    align-items: flex-start;
+  .timeline-logo {
+    display: none;
   }
 
-  .timeline-logo {
-    width: 36px;
-    height: 36px;
+  .timeline-item {
+    padding-bottom: 28px;
   }
 }
 
