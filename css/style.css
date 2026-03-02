@@ -584,6 +584,16 @@ section {
     text-align: left;
     margin-bottom: 4px;
   }
+
+  .timeline-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .timeline-logo {
+    width: 36px;
+    height: 36px;
+  }
 }
 
 @media (max-width: 480px) {
