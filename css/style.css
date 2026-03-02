@@ -404,6 +404,27 @@ section {
   color: var(--color-accent);
 }
 
+/* === Publication toggle === */
+.pub-toggle {
+  display: block;
+  margin: 24px auto 0;
+  padding: 8px 24px;
+  font-family: var(--font-en), var(--font-zh);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  background: transparent;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pub-toggle:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
 /* === Timeline === */
 .timeline {
   position: relative;

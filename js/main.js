@@ -47,6 +47,26 @@ const fadeObserver = new IntersectionObserver((entries) => {
 
 faders.forEach(section => fadeObserver.observe(section));
 
+// === Publication toggle ===
+const pubToggle = document.getElementById('pubToggle');
+const pubMoreItems = document.querySelectorAll('.pub-more');
+
+pubToggle.addEventListener('click', () => {
+  const expanded = pubToggle.getAttribute('data-expanded') === 'true';
+  const lang = getStoredLang();
+
+  pubMoreItems.forEach(item => {
+    item.hidden = !item.hidden;
+  });
+
+  pubToggle.setAttribute('data-expanded', !expanded);
+  pubToggle.setAttribute('data-i18n-en', expanded ? 'Show More' : 'Show Less');
+  pubToggle.setAttribute('data-i18n-zh', expanded ? '展开更多' : '收起');
+  pubToggle.textContent = expanded
+    ? (lang === 'zh' ? '展开更多' : 'Show More')
+    : (lang === 'zh' ? '收起' : 'Show Less');
+});
+
 // === Image lightbox ===
 const lightbox = document.createElement('div');
 lightbox.className = 'lightbox';
