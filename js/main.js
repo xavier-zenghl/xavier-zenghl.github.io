@@ -46,3 +46,24 @@ const fadeObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.15 });
 
 faders.forEach(section => fadeObserver.observe(section));
+
+// === Image lightbox ===
+const lightbox = document.createElement('div');
+lightbox.className = 'lightbox';
+lightbox.innerHTML = '<img src="" alt="">';
+document.body.appendChild(lightbox);
+
+const lightboxImg = lightbox.querySelector('img');
+
+document.querySelectorAll('.pub-figure img').forEach(img => {
+  img.style.cursor = 'zoom-in';
+  img.addEventListener('click', () => {
+    lightboxImg.src = img.src;
+    lightboxImg.alt = img.alt;
+    lightbox.classList.add('active');
+  });
+});
+
+lightbox.addEventListener('click', () => {
+  lightbox.classList.remove('active');
+});
