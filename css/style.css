@@ -407,13 +407,12 @@ section {
 /* === Timeline === */
 .timeline {
   position: relative;
-  padding-left: 20px;
 }
 
 .timeline::before {
   content: '';
   position: absolute;
-  left: 0;
+  left: -16px;
   top: 8px;
   bottom: 8px;
   width: 1px;
@@ -432,7 +431,7 @@ section {
 .timeline-item::before {
   content: '';
   position: absolute;
-  left: -24px;
+  left: -20px;
   top: 8px;
   width: 8px;
   height: 8px;
@@ -560,10 +559,6 @@ section {
 
   .pub-figure {
     width: 100%;
-  }
-
-  .timeline {
-    padding-left: 16px;
   }
 
   .timeline-logo {
