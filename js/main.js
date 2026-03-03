@@ -87,3 +87,31 @@ document.querySelectorAll('.pub-figure img').forEach(img => {
 lightbox.addEventListener('click', () => {
   lightbox.classList.remove('active');
 });
+
+// === Timeline accordion ===
+document.querySelectorAll('.timeline-header[role="button"]').forEach(header => {
+  header.addEventListener('click', () => {
+    const item = header.closest('.timeline-item');
+    const isExpanded = item.classList.contains('expanded');
+
+    // Accordion: close all open items
+    document.querySelectorAll('.timeline-item.expanded').forEach(openItem => {
+      openItem.classList.remove('expanded');
+      openItem.querySelector('.timeline-header').setAttribute('aria-expanded', 'false');
+    });
+
+    // Toggle clicked item (open if was closed)
+    if (!isExpanded) {
+      item.classList.add('expanded');
+      header.setAttribute('aria-expanded', 'true');
+    }
+  });
+
+  // Keyboard: Enter/Space
+  header.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      header.click();
+    }
+  });
+});

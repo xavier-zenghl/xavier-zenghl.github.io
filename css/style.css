@@ -476,6 +476,8 @@ section {
   align-items: center;
   gap: 12px;
   margin-bottom: 8px;
+  cursor: pointer;
+  user-select: none;
 }
 
 .timeline-logo {
@@ -493,6 +495,53 @@ section {
 
 .timeline-content > p:last-child {
   font-size: 0.9375rem;
+}
+
+.expand-icon {
+  margin-left: auto;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+  color: var(--color-text-secondary);
+}
+
+.timeline-item.expanded .expand-icon {
+  transform: rotate(180deg);
+}
+
+.timeline-details {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+
+.timeline-item.expanded .timeline-details {
+  max-height: 300px;
+  opacity: 1;
+}
+
+.timeline-details > p {
+  font-size: 0.9375rem;
+  color: var(--color-text-secondary);
+  margin-top: 8px;
+  line-height: 1.6;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.skill-tag {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: var(--color-surface);
+  color: var(--color-text-secondary);
+  border: 1px solid var(--color-border);
 }
 
 /* === Lightbox === */
