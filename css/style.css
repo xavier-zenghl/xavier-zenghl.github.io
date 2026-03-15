@@ -81,6 +81,14 @@ section {
   padding: var(--section-padding);
 }
 
+section .container > *:last-child {
+  margin-bottom: 0;
+}
+
+section .container > *:last-child > *:last-child {
+  margin-bottom: 0;
+}
+
 /* === Utilities === */
 .section-fade {
   opacity: 0;
@@ -469,17 +477,6 @@ section {
 }
 
 /* === Timeline === */
-.experience-groups {
-  display: grid;
-  gap: 48px;
-}
-
-.experience-group-title {
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--color-text);
-  margin-bottom: 20px;
-}
 
 .timeline {
   position: relative;
@@ -706,14 +703,6 @@ section {
 
   .timeline-item {
     padding-bottom: 28px;
-  }
-
-  .experience-groups {
-    gap: 40px;
-  }
-
-  .experience-group-title {
-    margin-bottom: 16px;
   }
 }
 
