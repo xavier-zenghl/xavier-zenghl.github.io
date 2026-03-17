@@ -143,8 +143,24 @@
             <div class="timeline-details" id="exp-astribot-ft">
               <p class="timeline-category" data-i18n-en="Algorithm" data-i18n-zh="算法">Algorithm</p>
               <ul class="timeline-highlights">
-                <li data-i18n-en="Reproduced π0.6* and improved it by unifying the value model and VLA into a single training pipeline, enabling online RL with world-model and real-robot recap rollouts." data-i18n-zh="复现 π0.6* 并改进：将价值模型与 VLA 合并至同一训练流，结合世界模型与真机 recap 进行 rollout 在线强化学习训练。">Reproduced π0.6* and improved it by unifying the value model and VLA into a single training pipeline, enabling online RL with world-model and real-robot recap rollouts.</li>
-                <li data-i18n-en="Co-first author and core developer of DuoCore-FS, a fast-slow dual-system model for robot manipulation." data-i18n-zh="快慢双系统操作模型 DuoCore-FS 共同一作及核心开发者。">Co-first author and core developer of DuoCore-FS, a fast-slow dual-system model for robot manipulation.</li>
+                <li data-i18n-en="Unified the value model and VLA into a single training pipeline and implemented RL with real-robot recap rollouts, enabling the robot to accomplish deformable object manipulation (e.g., cloth folding) for the first time."
+                    data-i18n-zh="将价值模型与 VLA 合并至同一训练流，实现基于真机 recap rollout 的强化学习训练，首次在本体机器人上完成叠衣服等柔性物体操作任务。">
+                  Unified the value model and VLA into a single training pipeline and implemented RL with real-robot recap rollouts, enabling the robot to accomplish deformable object manipulation (e.g., cloth folding) for the first time.</li>
+                <li data-i18n-en="Co-first author and core developer of DuoCore-FS, an asynchronous fast-slow dual-system VLA for whole-body manipulation. Led architecture design and real-world deployment. Achieved 30 Hz action generation (3× faster than comparable VLAs)."
+                    data-i18n-zh="快慢双系统全身操作模型 DuoCore-FS 共同一作及核心开发者，主导架构设计与真机部署，实现 30 Hz 动作生成（较同等规模 VLA 快 3 倍）。">
+                  Co-first author and core developer of DuoCore-FS, an asynchronous fast-slow dual-system VLA for whole-body manipulation. Led architecture design and real-world deployment. Achieved 30 Hz action generation (3× faster than comparable VLAs).</li>
+                <li data-i18n-en="Implemented Real-Time Chunking (RTC) during training, achieving smoother action-chunk transitions and significantly reducing post-hoc trajectory smoothing on the control side."
+                    data-i18n-zh="实现训练时 Real-Time Chunking (RTC)，显著提升 action chunk 间平滑性，大幅降低控制侧轨迹平滑处理量，动作跟踪更精确。">
+                  Implemented Real-Time Chunking (RTC) during training, achieving smoother action-chunk transitions and significantly reducing post-hoc trajectory smoothing on the control side.</li>
+                <li data-i18n-en="Reproduced and integrated 5 mainstream VLA models (π0, π0.5, VLA-Adapter, RDT-2, WALL-X). Built 2 custom VLAs by adding flow-matching action heads to Qwen3VL and Rynnec, matching π0-level performance with flexible input resolution."
+                    data-i18n-zh="复现并集成 5 个主流 VLA 模型（π0、π0.5、VLA-Adapter、RDT-2、WALL-X）。基于 Qwen3VL 与 Rynnec 添加 Flow Matching 动作头构建两个自研 VLA，在一定数据量下达到 π0 同等效果，且灵活支持输入分辨率。">
+                  Reproduced and integrated 5 mainstream VLA models (π0, π0.5, VLA-Adapter, RDT-2, WALL-X). Built 2 custom VLAs by adding flow-matching action heads to Qwen3VL and Rynnec, matching π0-level performance with flexible input resolution.</li>
+                <li data-i18n-en="Aligned 4,000+ hours of heterogeneous robot data and explored training paradigms: pretraining then fine-tuning (retaining 20% pretrain data) achieved 60% higher success rate and 30% faster convergence vs. training from scratch. Adopted dual-arm relative frame for ±10 cm height generalization. Fine-tuned π0.5 as the team's shared checkpoint."
+                    data-i18n-zh="对齐 4,000+ 小时异构机器人数据并探索训练范式：预训练后保留 20% 数据微调为最优策略，抓取成功率较无预训练提升 60%，收敛速度提升 30%。采用双臂互相坐标系实现 ±10 cm 高度泛化。基于全量数据微调 π0.5 作为团队统一训练起点。">
+                  Aligned 4,000+ hours of heterogeneous robot data and explored training paradigms: pretraining then fine-tuning (retaining 20% pretrain data) achieved 60% higher success rate and 30% faster convergence vs. training from scratch. Adopted dual-arm relative frame for ±10 cm height generalization. Fine-tuned π0.5 as the team's shared checkpoint.</li>
+                <li data-i18n-en="Proposed VLA + object detection co-training, using detection as an auxiliary task to improve generalization on unseen objects (success rate +40%); validated in an internal 711 retail scenario."
+                    data-i18n-zh="提出 VLA 与目标检测联合训练方案，以检测作为辅助任务提升对未见物体的泛化能力（成功率提升 40%），在内部 711 零售场景中验证落地。">
+                  Proposed VLA + object detection co-training, using detection as an auxiliary task to improve generalization on unseen objects (success rate +40%); validated in an internal 711 retail scenario.</li>
               </ul>
               <p class="timeline-category" data-i18n-en="AI Infra" data-i18n-zh="AI 基础设施">AI Infra</p>
               <ul class="timeline-highlights">
@@ -157,7 +173,9 @@
               <div class="skill-tags">
                 <span class="skill-tag">VLA</span>
                 <span class="skill-tag">RL</span>
-                <span class="skill-tag">World Model</span>
+                <span class="skill-tag">Flow Matching</span>
+                <span class="skill-tag">Co-training</span>
+                <span class="skill-tag">RTC</span>
               </div>
             </div>
           </div>
