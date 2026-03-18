@@ -568,7 +568,7 @@ section .container > *:last-child > *:last-child {
 }
 
 .timeline-item.expanded .timeline-details {
-  max-height: 500px;
+  max-height: 2000px;
   opacity: 1;
 }
 
