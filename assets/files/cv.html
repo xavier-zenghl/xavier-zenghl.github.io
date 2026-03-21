@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>曾鸿亮 - 简历</title>
+<link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai:wght@700&display=swap" rel="stylesheet">
+<style>
+  /* ===== Reset & Base ===== */
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: "Noto Sans SC", "Microsoft YaHei", "PingFang SC", sans-serif;
+    font-size: 10pt;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background: #fff;
+  }
+
+  /* ===== A4 Print Layout ===== */
+  @page {
+    size: A4;
+    margin: 12mm 15mm 12mm 15mm;
+  }
+
+  .page {
+    max-width: 210mm;
+    margin: 0 auto;
+    padding: 12mm 15mm;
+  }
+
+  @media print {
+    body { background: none; }
+    .page { padding: 0; max-width: none; }
+    a { color: #1a1a1a !important; text-decoration: none !important; }
+    /* 分页控制 */
+    .entry { break-inside: avoid; }
+    .section-title { break-after: avoid; }
+    .page-break-before { break-before: page; }
+  }
+
+  /* ===== Header ===== */
+  .header { display: flex; align-items: center; gap: 16pt; margin-bottom: 10pt; border-bottom: 2pt solid #999; padding-bottom: 8pt; }
+  .header .photo { width: 80pt; height: 100pt; flex-shrink: 0; border-radius: 3pt; overflow: hidden; }
+  .header .photo img { width: 100%; height: 100%; object-fit: cover; }
+  .header .info { flex: 1; text-align: left; }
+  .header h1 { font-family: "LXGW WenKai", "Times New Roman", cursive; font-size: 20pt; font-weight: 700; letter-spacing: 2pt; margin-bottom: 4pt; }
+  .header .subtitle { font-size: 11pt; color: #444; margin-bottom: 6pt; }
+  .header .contact { font-size: 9pt; color: #555; display: grid; grid-template-columns: 80pt 1fr 80pt 1fr; gap: 2pt 4pt; text-align: left; }
+  .header .contact a { color: #2563EB; text-decoration: none; }
+  .header .contact .label { font-weight: 600; color: #333; }
+  .header .contact .value { color: #555; }
+
+  /* ===== Section ===== */
+  .section { margin-bottom: 8pt; }
+  .section-title {
+    font-size: 12pt;
+    font-weight: 700;
+    color: #2F4F6F;
+    border-bottom: 1.25pt solid #999;
+    padding-bottom: 2pt;
+    margin-bottom: 6pt;
+  }
+
+  /* ===== Entry (timeline-like) ===== */
+  .entry { margin-bottom: 6pt; }
+  .entry-header { display: flex; justify-content: space-between; align-items: baseline; }
+  .entry-title { font-weight: 700; font-size: 10.5pt; }
+  .entry-org { color: #444; }
+  .entry-date { font-size: 9pt; color: #666; white-space: nowrap; }
+  .entry-sub { font-size: 9.5pt; color: #333; font-weight: 600; margin: 3pt 0 2pt 0; }
+
+  /* ===== Lists ===== */
+  ul.highlights {
+    margin: 2pt 0 2pt 14pt;
+    padding: 0;
+  }
+  ul.highlights li {
+    margin-bottom: 1.5pt;
+    text-align: justify;
+  }
+
+  /* ===== Publication list ===== */
+  ol.pub-list {
+    margin: 2pt 0 2pt 16pt;
+    padding: 0;
+  }
+  ol.pub-list li {
+    margin-bottom: 2pt;
+    text-align: justify;
+  }
+  ol.pub-list .venue { font-style: italic; }
+  ol.pub-list .badge {
+    display: inline-block;
+    font-size: 8pt;
+    font-style: normal;
+    color: #fff;
+    background: #2563EB;
+    border-radius: 2pt;
+    padding: 0 3pt;
+    margin-left: 3pt;
+    vertical-align: middle;
+  }
+
+  /* ===== Skills ===== */
+  .skills-grid { display: grid; grid-template-columns: 70pt 1fr; gap: 2pt 8pt; }
+  .skills-grid .label { font-weight: 600; color: #333; }
+  .skills-grid .value { color: #444; }
+
+  /* ===== Misc ===== */
+  .eval-text { text-align: justify; }
+  strong { font-weight: 700; }
+
+  /* ===== Download Button ===== */
+  .download-btn {
+    position: fixed;
+    top: 16pt;
+    right: 16pt;
+    padding: 6pt 14pt;
+    background: #2F4F6F;
+    color: #fff;
+    border: none;
+    border-radius: 4pt;
+    font-size: 10pt;
+    cursor: pointer;
+  }
+  .download-btn:hover { background: #1e3a54; }
+  @media print { .download-btn { display: none; } }
+</style>
+</head>
+<body>
+<button class="download-btn" onclick="window.print()">🖨️ 打印</button>
+<div class="page">
+
+  <!-- ===== 头部 ===== -->
+  <div class="header">
+    <div class="info">
+      <h1>曾鸿亮<span style="font-family: 'Times New Roman', serif;">（Xavier）</span></h1>
+      <div class="subtitle">具身智能算法工程师</div>
+      <div class="contact">
+        <span class="label">📅 出生年月</span><span class="value">1996.04</span>
+        <span class="label">📍 籍　　贯</span><span class="value">湖南省株洲市</span>
+        <span class="label">📱 联系电话</span><span class="value">18813297673</span>
+        <span class="label">📧 联系邮箱</span><span class="value"><a href="mailto:scutzenghongl@gmail.com">scutzenghongl@gmail.com</a></span>
+        <span class="label">🔗 个人主页</span><span class="value" style="grid-column: span 3;"><a href="https://xavier-zenghl.github.io">xavier-zenghl.github.io</a> / <a href="https://xavier-zenghl-github-io.pages.dev">xavier-zenghl-github-io.pages.dev</a></span>
+      </div>
+    </div>
+    <div class="photo">
+      <img src="../images/微信图片_20251103002229_white.jpg" alt="曾鸿亮">
+    </div>
+  </div>
+
+  <!-- ===== 教育背景 ===== -->
+  <div class="section">
+    <div class="section-title">教育背景</div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <div><span class="entry-title">华南理工大学</span> | 计算机科学与工程学院 | 计算机科学与技术博士 | 导师：张平教授</div>
+        <div class="entry-date">2020.09 — 2025.06</div>
+      </div>
+      <ul class="highlights">
+        <li>研究方向：具身智能（机器人操作、主动感知、强化学习）、3D 点云自监督学习与生成</li>
+        <li>以一作身份在 TNNLS、AAAI、IJCAI、ICME、ICASSP 等发表 <strong>6 篇论文（4 篇 Oral）</strong></li>
+        <li>授权专利：一种机器人操纵铰接物体的方法和系统</li>
+        <li>奖学金：学业奖学金、五粮液优秀学生奖学金</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <div><span class="entry-title">华南理工大学</span> | 机械与汽车工程学院 | 机械工程学士</div>
+        <div class="entry-date">2014.09 — 2018.06</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 工作经历 ===== -->
+  <div class="section">
+    <div class="section-title">工作经历</div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <div><span class="entry-title">星尘智能（Astribot）</span> · 具身智能算法工程师</div>
+        <div class="entry-date">2024.11 — 至今</div>
+      </div>
+
+      <div class="entry-sub">算法</div>
+      <ul class="highlights">
+        <li>将价值模型与 VLA 合并至同一训练流，实现基于真机 recap rollout 的强化学习训练，首次在星尘 S1 机器人上完成叠衣服等柔性物体操作任务并完成内部演示。</li>
+        <li>快慢双系统全身操作模型 DuoCore-FS 共同一作及核心开发者，参与架构设计、真机部署与论文撰写，实现 30 Hz 动作生成（较同等规模 VLA 快 3 倍）。</li>
+        <li>实现训练时 Real-Time Chunking（RTC），显著提升 action chunk 间平滑性，大幅降低控制侧轨迹平滑处理量，动作跟踪更精确。</li>
+        <li>复现并集成多个主流 VLA 模型（π0、π0.5、π0.6*、RDT-2、WALL-X、MEM、VLA-Adapter 等），基于 Qwen3VL 与 Rynnec 添加 Flow Matching 动作头构建两个自研 VLA，在一定数据量下达到 π0 同等效果，且灵活支持输入分辨率。</li>
+        <li>探索 4,000+ 小时异构数据训练范式，预训练+微调策略使成功率提升 60%、收敛加速 30%；采用双臂相对坐标系实现 ±10 cm 高度泛化；基于全量数据微调 π0.5 作为团队统一 checkpoint。</li>
+        <li>提出 VLA 与目标检测联合训练方案，以检测作为辅助任务提升对未见物体的泛化能力（成功率提升 40%），在内部 711 零售场景中验证落地。</li>
+      </ul>
+
+      <div class="entry-sub">AI 基础设施</div>
+      <ul class="highlights">
+        <li>独立搭建公司统一机器人模型分布式训练框架，基于 DeepSpeed ZeRO 实现多机多卡训练，集成 bf16 混合精度、梯度检查点与 FlashAttention 2；支持 LeRobot 数据格式与 LoRA 微调，提供 WebSocket 推理服务，显著加快模型迭代效率，支撑金马等多个 POC 项目快速交付。</li>
+        <li>为公司机器人数据集制定统一格式规范，优化 LeRobot 数据管线中的 norm 计算与数据读取转换流程，norm 计算提速 30 倍，显著提升训练数据准备效率。</li>
+        <li>收集、清洗并标准化 4,000+ 小时异构机器人数据，统一不同机型间的动作坐标系。</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <div><span class="entry-title">广东恒翼能科技股份有限公司</span> · 机械工程师</div>
+        <div class="entry-date">2018.07 — 2019.06</div>
+      </div>
+      <ul class="highlights">
+        <li>负责锂电池化成分容设备的机械结构设计与优化。</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ===== 科研经历 ===== -->
+  <div class="section page-break-before">
+    <div class="section-title">科研经历</div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <div><span class="entry-title">广东省重点领域研发计划：机器人感知与人机共融技术研究</span></div>
+      </div>
+      <ul class="highlights">
+        <li><strong>AHEGC</strong>（TNNLS 2024, JCR Q1）：结合后见之明经验回放与目标约束好奇心模块，通过目标相似度自适应调整奖励权重，在 Gymnasium-Robotics 上收敛速度与成功率较基线提升 1.5 倍。</li>
+        <li><strong>Active Visual Learning</strong>（ICASSP 2025）：提出融合强化学习与 PointNet++/Transformer 的主动视觉学习方法，通过滑动窗口整合历史信息与决斗网络奖励机制促进多样探索，在 R3ED 数据集上显著提升目标检测准确性与效率。</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <div><span class="entry-title">广东省基础与应用基础研究重大项目：面向人机物共融的智能感知与决策研究</span></div>
+      </div>
+      <ul class="highlights">
+        <li><strong>MARS</strong>（IJCAI 2024 Oral）：提出了 MARS 框架，用于精确感知关节物体的参数。该框架通过多模态融合模块利用多尺度 RGB 特征增强点云特征，并结合基于强化学习的主动感知策略，自主优化观察视角。在 PartNet-Mobility 数据集的实验中，MARS 在关节参数估计精度上（方向：1.58°、位置：0.03m、状态：3.74）超越了当前最先进的方法。</li>
+        <li><strong>GMAP</strong>（AAAI 2025 Oral）：提出了 GMAP 方法，旨在系统地整合从命令到感知和操纵的整个过程。GMAP 通过预训练编码器进行精确的部件级分割、识别物体关节的几何和运动参数，以及评估点级操作建议来确定机器人的交互姿势。最后，通过结合命令、关节参数和交互点，动态计算机器人的执行轨迹。</li>
+        <li><strong>Point-UMAE</strong>（ICASSP 2025 Oral）：Point-UMAE 基于 Unet 结构，旨在增强点云中局部细节和全局语义的捕获。采用不对称的编码器-解码器架构和自顶向下的细粒度掩蔽策略，以提高多尺度一致性。</li>
+        <li><strong>Point-MGE</strong>（ICME 2025 Oral）：Point-MGE 深度融合 3D 点云的表示学习和生成学习。该框架首先使用向量量化变分自编码器（VQVAE）重建 3D 形状的神经场表示，从而学习点云补丁的离散语义特征。然后，设计了一个滑动掩蔽比例来平滑从表示学习到生成学习的过渡。</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ===== 论文列表 ===== -->
+  <div class="section">
+    <div class="section-title">论文发表</div>
+    <ol class="pub-list">
+      <li>Teqiang Zou*, <strong>Hongliang Zeng*</strong>, et al. "Asynchronous Fast-Slow Vision-Language-Action Policies for Whole-Body Robotic Manipulation." <span class="venue">arXiv preprint</span>, 2025. （共同一作）</li>
+      <li><strong>Hongliang Zeng</strong>, Ping Zhang, et al. "Masked Generative Extractor for Synergistic Representation and 3D Generation of Point Clouds." <span class="venue">ICME</span>, 2025. <span class="badge">Oral</span></li>
+      <li><strong>Hongliang Zeng</strong>, Ping Zhang, et al. "GMAP: Generalized Manipulation of Articulated Objects in Robotic Using Pre-trained Model." <span class="venue">AAAI</span>, 2025. <span class="badge">Oral</span></li>
+      <li><strong>Hongliang Zeng</strong>, Ping Zhang, et al. "Point-UMAE: Unet-like Masked Autoencoders for Point Cloud Self-supervised Learning." <span class="venue">ICASSP</span>, 2025. <span class="badge">Oral</span></li>
+      <li><strong>Hongliang Zeng</strong>, Ping Zhang, et al. "Active Visual Learning for Robots with Dueling Deep Q-Networks and Transformer Encoders." <span class="venue">ICASSP</span>, 2025.</li>
+      <li><strong>Hongliang Zeng</strong>, Ping Zhang, et al. "MARS: Multimodal Active Robotic Sensing for Articulated Characterization." <span class="venue">IJCAI</span>, 2024. <span class="badge">Oral</span></li>
+      <li><strong>Hongliang Zeng</strong>, Ping Zhang, et al. "AHEGC: Adaptive Hindsight Experience Replay With Goal-Amended Curiosity Module for Robot Control." <span class="venue">TNNLS</span>, 2024. (JCR Q1, IF: 10.4)</li>
+      <li>Jiahua Wang, Ping Zhang, <strong>Hongliang Zeng</strong>, et al. "FAEMTrack: Feature-Augmented Embedding and Cross-Drone Fusion for Single Object Tracking." <span class="venue">IEEE Internet of Things Journal</span>, 2025.</li>
+      <li>Tingyu Ye, Ping Zhang, <strong>Hongliang Zeng</strong>, et al. "Multi-objective Neural Architecture Search Combining Binary Artificial Bee Colony Algorithm for Dynamic Hand Gesture Recognition." <span class="venue">Expert Systems with Applications</span>, 2025.</li>
+      <li>Tingyu Ye, Ping Zhang, Hui Wang, <strong>Hongliang Zeng</strong>, et al. "Reinforcement Learning-Driven Dual Neighborhood Structure Artificial Bee Colony Algorithm for Continuous Optimization Problem." <span class="venue">Applied Soft Computing</span>, 2024.</li>
+    </ol>
+  </div>
+
+
+</div>
+</body>
+</html>
