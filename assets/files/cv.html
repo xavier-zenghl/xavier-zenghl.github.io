@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>曾鸿亮 - 简历</title>
-<link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai:wght@700&family=Noto+Sans+SC:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
   /* ===== Reset & Base ===== */
   *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -12,7 +12,7 @@
   body {
     font-family: "Noto Sans SC", "Microsoft YaHei", "PingFang SC", sans-serif;
     font-size: 10pt;
-    line-height: 1.6;
+    line-height: 1.5;
     color: #1a1a1a;
     background: #fff;
   }
@@ -20,13 +20,13 @@
   /* ===== A4 Print Layout ===== */
   @page {
     size: A4;
-    margin: 12mm 15mm 12mm 15mm;
+    margin: 12mm 14mm 10mm 14mm;
   }
 
   .page {
     max-width: 210mm;
     margin: 0 auto;
-    padding: 12mm 15mm;
+    padding: 12mm 14mm;
   }
 
   @media print {
@@ -40,7 +40,7 @@
   }
 
   /* ===== Header ===== */
-  .header { display: flex; align-items: center; gap: 16pt; margin-bottom: 10pt; border-bottom: 2pt solid #999; padding-bottom: 8pt; }
+  .header { display: flex; align-items: center; gap: 16pt; margin-bottom: 8pt; border-bottom: 2pt solid #999; padding-bottom: 6pt; }
   .header .photo { width: 80pt; height: 100pt; flex-shrink: 0; border-radius: 3pt; overflow: hidden; }
   .header .photo img { width: 100%; height: 100%; object-fit: cover; }
   .header .info { flex: 1; text-align: left; }
@@ -52,21 +52,20 @@
   .header .contact .value { color: #555; }
 
   /* ===== Section ===== */
-  .section { margin-bottom: 8pt; }
+  .section { margin-bottom: 6pt; }
   .section-title {
     font-size: 12pt;
     font-weight: 700;
     color: #2F4F6F;
     border-bottom: 1.25pt solid #999;
     padding-bottom: 2pt;
-    margin-bottom: 6pt;
+    margin-bottom: 5pt;
   }
 
   /* ===== Entry (timeline-like) ===== */
-  .entry { margin-bottom: 6pt; }
+  .entry { margin-bottom: 5pt; }
   .entry-header { display: flex; justify-content: space-between; align-items: baseline; }
   .entry-title { font-weight: 700; font-size: 10.5pt; }
-  .entry-org { color: #444; }
   .entry-date { font-size: 9pt; color: #666; white-space: nowrap; }
   .entry-sub { font-size: 9.5pt; color: #333; font-weight: 600; margin: 3pt 0 2pt 0; }
 
@@ -76,7 +75,7 @@
     padding: 0;
   }
   ul.highlights li {
-    margin-bottom: 1.5pt;
+    margin-bottom: 1pt;
     text-align: justify;
   }
 
@@ -86,8 +85,9 @@
     padding: 0;
   }
   ol.pub-list li {
-    margin-bottom: 2pt;
+    margin-bottom: 1pt;
     text-align: justify;
+    font-size: 9pt;
   }
   ol.pub-list .venue { font-style: italic; }
   ol.pub-list .badge {
@@ -99,12 +99,11 @@
   }
 
   /* ===== Skills ===== */
-  .skills-grid { display: grid; grid-template-columns: 70pt 1fr; gap: 2pt 8pt; }
+  .skills-grid { display: grid; grid-template-columns: 85pt 1fr; gap: 2pt 8pt; }
   .skills-grid .label { font-weight: 600; color: #333; }
   .skills-grid .value { color: #444; }
 
   /* ===== Misc ===== */
-  .eval-text { text-align: justify; }
   strong { font-weight: 700; }
 
   /* ===== Download Button ===== */
@@ -134,11 +133,11 @@
       <h1>曾鸿亮<span style="font-family: 'Times New Roman', serif;">（Xavier）</span></h1>
       <div class="subtitle">具身智能算法工程师</div>
       <div class="contact">
-        <span class="label">📅 出生年月</span><span class="value">1996.04</span>
-        <span class="label">📍 籍　　贯</span><span class="value">湖南省株洲市</span>
-        <span class="label">📱 联系电话</span><span class="value">18813297673</span>
-        <span class="label">📧 联系邮箱</span><span class="value"><a href="mailto:scutzenghongl@gmail.com">scutzenghongl@gmail.com</a></span>
-        <span class="label">🔗 个人主页</span><span class="value" style="grid-column: span 3;"><a href="https://xavier-zenghl.github.io">xavier-zenghl.github.io</a> / <a href="https://xavier-zenghl-github-io.pages.dev">xavier-zenghl-github-io.pages.dev</a></span>
+        <span class="label">出生年月</span><span class="value">1996.04</span>
+        <span class="label">籍贯</span><span class="value">湖南省株洲市</span>
+        <span class="label">联系电话</span><span class="value">18813297673</span>
+        <span class="label">联系邮箱</span><span class="value"><a href="mailto:scutzenghongl@gmail.com">scutzenghongl@gmail.com</a></span>
+        <span class="label">个人主页</span><span class="value" style="grid-column: span 3;"><a href="https://xavier-zenghl.github.io">xavier-zenghl.github.io</a> / <a href="https://xavier-zenghl-github-io.pages.dev">xavier-zenghl-github-io.pages.dev</a></span>
       </div>
     </div>
     <div class="photo">
@@ -183,10 +182,10 @@
 
       <div class="entry-sub">算法</div>
       <ul class="highlights">
-        <li>将价值模型与 VLA 合并至同一训练流，实现基于真机 recap rollout 的强化学习训练，首次在星尘 S1 机器人上完成叠衣服等柔性物体操作任务并完成内部演示。</li>
+        <li>将价值模型与 VLA 合并至同一训练流，实现基于真机 recap rollout 的强化学习训练，首次在星尘 S1 机器人上完成叠衣服等柔性物体操作任务并完成内部演示。正在推进世界模型（ctrl_world）与该强化学习联合方案的端到端打通，探索以世界模型生成合成数据驱动策略优化的新技术路线。</li>
         <li>快慢双系统全身操作模型 DuoCore-FS 共同一作及核心开发者，参与架构设计、真机部署与论文撰写，实现 30 Hz 动作生成（较同等规模 VLA 快 3 倍）。</li>
         <li>实现训练时 Real-Time Chunking（RTC），显著提升 action chunk 间平滑性，大幅降低控制侧轨迹平滑处理量，动作跟踪更精确。</li>
-        <li>复现并集成多个主流 VLA 模型（π0、π0.5、π0.6*、RDT-2、WALL-X、MEM、VLA-Adapter 等），基于 Qwen3VL 与 Rynnec 添加 Flow Matching 动作头构建两个自研 VLA，在一定数据量下达到 π0 同等效果，且灵活支持输入分辨率。</li>
+        <li>复现并集成多个主流 VLA 模型（π0、π0.5、π0.6*、RDT-2、WALL-X、MEM、VLA-Adapter 等）、WM（ctrl_world）与 WAM（lingbot-va），基于 Qwen3VL 与 Rynnec 添加 Flow Matching 动作头构建两个自研 VLA，在一定数据量下达到 π0 同等效果，且灵活支持输入分辨率。</li>
         <li>探索 4,000+ 小时异构数据训练范式，预训练+微调策略使成功率提升 60%、收敛加速 30%；采用双臂相对坐标系实现 ±10 cm 高度泛化；基于全量数据微调 π0.5 作为团队统一 checkpoint。</li>
         <li>提出 VLA 与目标检测联合训练方案，以检测作为辅助任务提升对未见物体的泛化能力（成功率提升 40%），在内部 711 零售场景中验证落地。</li>
         <li>参与星尘智能 0426 DuoCore 系统对外 Demo 演示的模型训练与测试，首次在 S0 本体上成功部署并跑通 VLA。</li>
@@ -258,6 +257,17 @@
       <li>Tingyu Ye, Ping Zhang, <strong>Hongliang Zeng</strong>, et al. "Multi-objective Neural Architecture Search Combining Binary Artificial Bee Colony Algorithm for Dynamic Hand Gesture Recognition." <span class="venue">Expert Systems with Applications</span>, 2025.</li>
       <li>Tingyu Ye, Ping Zhang, Hui Wang, <strong>Hongliang Zeng</strong>, et al. "Reinforcement Learning-Driven Dual Neighborhood Structure Artificial Bee Colony Algorithm for Continuous Optimization Problem." <span class="venue">Applied Soft Computing</span>, 2024.</li>
     </ol>
+  </div>
+
+  <!-- ===== 技术技能 ===== -->
+  <div class="section">
+    <div class="section-title">技术技能</div>
+    <div class="skills-grid">
+      <span class="label">Lang & Tools</span><span class="value">Python, Bash, Git, Docker, Linux, LeRobot, WebSocket</span>
+      <span class="label">Training Infra</span><span class="value">PyTorch, DeepSpeed (ZeRO), FlashAttention 2, LoRA, bf16 Mixed Precision</span>
+      <span class="label">Robot Learning</span><span class="value">VLA, Reinforcement Learning, World Model</span>
+      <span class="label">AI Tools</span><span class="value">Claude Code, Cursor, MCP, Agentic Workflow</span>
+    </div>
   </div>
 
 
