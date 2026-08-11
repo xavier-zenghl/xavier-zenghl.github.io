@@ -21,7 +21,7 @@
 
   --max-width: 800px;
   --nav-height: 64px;
-  --section-padding: 64px 24px;
+  --section-padding: 40px 24px;
 }
 
 /* === Base === */
@@ -668,7 +668,7 @@ section .container > *:last-child > *:last-child {
 /* === Responsive === */
 @media (max-width: 768px) {
   :root {
-    --section-padding: 48px 20px;
+    --section-padding: 28px 20px;
   }
 
   h1 { font-size: 2rem; }
